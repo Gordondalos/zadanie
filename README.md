@@ -62,4 +62,16 @@ Skype: dkireev
 Оригинал вакансии:
 https://hh.ru/vacancy/20022248
 
+вот как это работает
 
+https://www.youtube.com/watch?v=BPaEGCRUXbA&feature=youtu.be
+
+для установки склонируйте репозиторий,
+
+    npm install
+    
+у вас должен быть установлен angular cli, если он установлен
+
+    ng serve --open
+    
+    

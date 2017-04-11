@@ -4,8 +4,6 @@
   <span>
     <button (click)="getData()">{{ 'Загрузить данные' }}</button>
   </span>
-
-  <div id="content"></div>
-
+  <app-another *ngIf="data" [data]="data"> </app-another>
 </div>
 

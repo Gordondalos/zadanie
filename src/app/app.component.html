@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div class="mydiv text-center">
+  <h1>Асинхронная загрузка данных с срервера</h1>
+
+  <span>
+    <button (click)="getData()">{{ 'Загрузить данные' }}</button>
+  </span>
+
+  <div id="content"></div>
+
+</div>
+

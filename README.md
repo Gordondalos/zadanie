@@ -1,28 +1,65 @@
-# Counter
+Тестовое задание 
+Typescript/Angular 2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+Данное тестовое задание будет оплачено всем, кто  полностью его решит, независимо от результата трудоустройства!
 
-## Development server
+Целью выполнения задания является проверка уровня владения кандидатом технологиями (Typescript/Angular 2), качество и скорость работы. Кроме того, важным аспектом является правильное и внимательное понимание задания.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Условия задачи:
+1. Допустим что DOM-модель можно описать следующим (упрощенным) интерфейсом.
+     interface IDomNode {
+   	 tag: string | undefined;
+   	 attributes: {[key: string]: string};
+   	 content: IDomNode[];
+   	 text?: string;
+    }
+2. Модель поставляется в json-файле.
+ 
+Постановка задачи:
+Необходимо разработать компонент который на базе переданной модели создает и загружает в себя angular-компонент, т.е. необходимо в рантайм (после того как angular-приложение уже загрузилось):
+   - загрузить HTTP-запросом json-файл (путь передается входным параметром компонента);
+   - создать корректный HTML-шаблон по загруженной модели;
+   - создать angular-компонент с полученным шаблоном и скомпилировать его;
+   - загрузить компонент.
 
-## Code scaffolding
+Пример данных: 
+Если входными данными является следующая модель:
+{
+    "tag": "div",
+    "content": [
+        {
+            "tag": "span",
+            "attributes": {
+   		     "style": "color: red"
+   		 },
+            "content": [
+                { "text": "Enter value:" }
+            ]
+   	 },
+        { "tag": "input", "attributes": {
+                "type": "text",
+                "value": "test",
+   	    	 "style": "color: green"
+            }
+        }
+    ]
+}
+То вывод браузера будет следующий:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+На что обращается внимание:
+Качество кода.
+Наличие тестов (по желанию)
+Наличие readme с описание сборки и запуска
+Фактически затраченное время
 
-## Running unit tests
+Контакты для вопросов:
+Skype: dkireev
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Также просьба уведомлять о начале выполнения задания, чтобы избежать напрасно потраченного времени. 
 
-## Running end-to-end tests
+Оригинал вакансии:
+https://hh.ru/vacancy/20022248
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

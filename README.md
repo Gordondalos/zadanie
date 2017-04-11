@@ -75,3 +75,8 @@ https://www.youtube.com/watch?v=BPaEGCRUXbA&feature=youtu.be
     ng serve --open
     
     
+оригинал задания тут
+
+    https://docs.google.com/document/d/1a9BLIUMBnikxnWyn_k8aJFX2RXh214LylUhYa2J4ovY/edit
+    
+    

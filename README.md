@@ -64,7 +64,7 @@ https://hh.ru/vacancy/20022248
 
 вот как это работает
 
-https://www.youtube.com/watch?v=BPaEGCRUXbA&feature=youtu.be
+    https://youtu.be/ARnyhaDezlU
 
 для установки склонируйте репозиторий,
 

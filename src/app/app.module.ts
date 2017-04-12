@@ -21,7 +21,7 @@ import { COMPILER_PROVIDERS } from '@angular/compiler';
     HttpModule,
     DynamicModule.forRoot() // singletons
   ],
-  providers: [SimpleService, COMPILER_PROVIDERS],
+  providers: [SimpleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

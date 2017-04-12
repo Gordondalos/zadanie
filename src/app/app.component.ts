@@ -13,22 +13,13 @@ import { SimpleService } from "./simple.service";
 export class AppComponent {
 
 
-
-
-
-
-
-
     simpleService : SimpleService;
-
     constructor ( simpleService : SimpleService ) {
         this.simpleService = simpleService;
 
     }
 
-
     data:any;
-
 
     getData () {
         this.simpleService.getData ( 1, '/tags/' )

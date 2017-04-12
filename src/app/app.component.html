@@ -1,9 +1,11 @@
 <div class="mydiv text-center">
-  <h1>Асинхронная загрузка данных с срервера</h1>
 
   <span>
     <button (click)="getData()">{{ 'Загрузить данные' }}</button>
   </span>
   <app-another *ngIf="data" [data]="data"> </app-another>
 </div>
+
+
+
 
